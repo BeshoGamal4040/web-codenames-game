@@ -1,0 +1,46 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cell {
+  width: 200px;
+  height: 100px;
+  background-color: #ccc;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Color backgrounds when revealed */
+.cell.revealed.green { background-color: green; color: white; }
+.cell.revealed.red   { background-color: red; color: white; }
+.cell.revealed.gray  { background-color: gray; color: white; }
+.cell.revealed.black { background-color: black; color: white; }
+
+.scoreboard {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
