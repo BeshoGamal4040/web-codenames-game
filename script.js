@@ -45,8 +45,8 @@ selectedWords.forEach((word, index) => {
       cell.classList.add("revealed", color); 
 
       if (color === "green") greenScore++ , playSound("green");
-      if (color === "red") redScore++ , playSound("red");
-      if (color == "black"){
+      else if (color === "red") redScore++ , playSound("red");
+      else if (color == "black"){
         alert("You Lost 😱!, The game is about to restart.");
         location.reload();
       }
